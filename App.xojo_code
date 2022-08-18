@@ -15,7 +15,7 @@ Inherits MobileApplication
 	#tag EndEvent
 
 
-	#tag Constant, Name = UseRevealServer, Type = Boolean, Dynamic = False, Default = \"True", Scope = Public
+	#tag Constant, Name = UseRevealServer, Type = Boolean, Dynamic = False, Default = \"False", Scope = Public
 	#tag EndConstant
 
 
