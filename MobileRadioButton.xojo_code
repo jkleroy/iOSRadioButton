@@ -53,7 +53,7 @@ Inherits MobileButton
 		End Function
 	#tag EndMethod
 
-	#tag Method, Flags = &h0
+	#tag Method, Flags = &h0, Description = 47726F757073204D6F62696C65526164696F427574746F6E20636F6E74726F6C7320746F676574686572
 		Function GroupButtons() As MobileRadioButton()
 		  
 		  if sharedLinks.Count > 0 then
@@ -109,7 +109,7 @@ Inherits MobileButton
 		End Function
 	#tag EndMethod
 
-	#tag Method, Flags = &h0
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652063757272656E746C792073656C656374656420627574746F6E2E2052657475726E73206E696C206966206E6F20627574746F6E2069732073656C65637465642E
 		Function SelectedButton() As MobileRadioButton
 		  if self.Selected then
 		    Return self
@@ -207,7 +207,7 @@ Inherits MobileButton
 		End Sub
 	#tag EndMethod
 
-	#tag Method, Flags = &h0
+	#tag Method, Flags = &h0, Description = 53657475707320746865205573657220496E7465726661636520666F722074686520627574746F6E207573696E6720746865207061737365642070696374757265732E
 		Sub SetupUI(normal As Picture, selected As Picture)
 		  
 		  SetImageXC(if(self.mSelected, selected, normal))
@@ -215,7 +215,7 @@ Inherits MobileButton
 		End Sub
 	#tag EndMethod
 
-	#tag Method, Flags = &h0
+	#tag Method, Flags = &h0, Description = 556E73656C6563747320616C6C20627574746F6E7320696E207468652067726F75702E
 		Sub UnselectAllButtons()
 		  
 		  
@@ -244,8 +244,8 @@ Inherits MobileButton
 		Private mrequiresFallbackImages As Boolean
 	#tag EndProperty
 
-	#tag Property, Flags = &h0
-		mSelected As Boolean
+	#tag Property, Flags = &h21
+		Private mSelected As Boolean
 	#tag EndProperty
 
 	#tag Property, Flags = &h0
@@ -256,7 +256,7 @@ Inherits MobileButton
 		picSelected As Picture
 	#tag EndProperty
 
-	#tag ComputedProperty, Flags = &h0
+	#tag ComputedProperty, Flags = &h0, Description = 496620746869732070726F70657274792072657475726E7320747275652C20796F752061726520726573706F6E7369626C6520666F722073657474696E67207069634E6F726D616C20616E642070696353656C65637465642070696374757265732E20546869732077696C6C206F6E6C792068617070656E206F6E20694F53313120616E6420694F5331322E
 		#tag Getter
 			Get
 			  Return mrequiresFallbackImages
@@ -288,7 +288,7 @@ Inherits MobileButton
 		Attributes( hidden = True ) sharedLinks() As WeakRef
 	#tag EndProperty
 
-	#tag Property, Flags = &h0
+	#tag Property, Flags = &h0, Description = 54686520746167206F662074686520726164696F20627574746F6E2E
 		tag As Variant
 	#tag EndProperty
 
